@@ -36,3 +36,119 @@
     transform: rotate(360deg);
   }
 }
+/* App.css */
+
+/* Regular styles for the app */
+.App {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Night mode styles */
+.App.night-mode {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+/* Header styles */
+.Header {
+  background-color: #007bff;
+  padding: 10px;
+}
+
+/* Sidebar styles */
+.Sidebar {
+  width: 250px;
+  height: 100%;
+  background-color: #007bff;
+  color: #f0f0f0;
+  padding: 10px;
+}
+
+/* Main content styles */
+.main-content {
+  padding: 20px;
+}
+
+/* Form input styles */
+.FormInput {
+  margin-bottom: 10px;
+}
+
+/* Form submit styles */
+.FormSubmit {
+  margin-bottom: 20px;
+}
+
+/* Region info card styles */
+.RegionInfoCard {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* OSM map styles */
+.OSMMap {
+  height: 400px;
+  width: 100%;
+}
+
+/* Footer styles */
+.Footer {
+  background-color: #007bff;
+  padding: 10px;
+  color: #f0f0f0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Night mode toggle styles */
+.night-mode-toggle {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.night-mode-toggle label {
+  cursor: pointer;
+}
+
+.night-mode-toggle input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.night-mode-toggle input[type="checkbox"] + span {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 10px;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+.night-mode-toggle input[type="checkbox"] + span:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  transition: left 0.3s;
+}
+
+.night-mode-toggle input[type="checkbox"]:checked + span {
+  background-color: #007bff;
+}
+
+.night-mode-toggle input[type="checkbox"]:checked + span:before {
+  left: 22px;
+}
+
